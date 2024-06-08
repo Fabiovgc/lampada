@@ -4,6 +4,22 @@ header, main {
     align-items: center;
 }
 
+.button__area {
+    display:flex;
+}
+
 button {
     width:100px;
+    padding:5px 15px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: #ff6600a2;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 30px;
+    border:1px inset #ccc;
+}
+
+button:hover {
+    background-color: #ff66008e;
+    border: 2px inset #ccc;
 }
