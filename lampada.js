@@ -3,17 +3,21 @@ const turn__off = document.getElementById('turn__off');
 const lamp = document.getElementById('lamp');
 
 
-function isLapBroken(){
+function isLampBroken(){
   return lamp.src.indexOf ('quebrada') > -1;
 }
 
 
 function lampOn() {
+  if(!isLampBroken()){
   lamp.src = './img/ligada.jpg';
+  }
 }
 
 function lampOff() {
+  if(!isLampBroken()){
   lamp.src = './img/b983w.jpg'
+  }
 }
 
 function lampBroke() {
